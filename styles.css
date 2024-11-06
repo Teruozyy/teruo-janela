@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header .logo h1 {
+    display: inline;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+ 
+.hero {
+    background: url('img/hero.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+}
+
+.hero p {
+    margin: 20px 0;
+}
+
+.hero .btn {
+    padding: 10px 30px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.services {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-cards .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 20px;
+}
+
+.service-cards .card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.service-cards .card h3 {
+    margin: 20px 0;
+}
+
+.service-cards .card p {
+    color: #555;
+}
+
+
+.gallery {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-media {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer .social-media li {
+    margin: 0 10px;
+}
+
+footer .social-media li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+    }
+
+    .service-cards .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+}
